@@ -4,7 +4,11 @@ fun main() {
     var Anglia = Panstwo("Anglia", u = "krzyz", z = false, cze = true, bi = true, ni = false, cza = false)
     var a = mutableListOf<Panstwo>(Anglia, Polska, Niemcy)
     var b = mutableListOf<Panstwo>()
-    filterKolory(a, b, cze = true, bi = false, ni = false, cza = true)
+    var c = mutableListOf<Panstwo>()
 
+    filterKolory(a, b, cze = true, bi = true)
     results(b)
+
+    fiterUlozenie(b, c, u = "poziome")
+    results(c)
 }
