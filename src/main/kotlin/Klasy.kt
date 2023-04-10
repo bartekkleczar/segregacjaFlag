@@ -1,6 +1,5 @@
-class Panstwo(n: String,k: Int, u: String, z: Boolean, cze: Boolean, bi: Boolean, ni: Boolean, cza: Boolean){
+class Panstwo(n: String, u: String = "poziome", z: Boolean = false, cze: Boolean = true, bi: Boolean = true, ni: Boolean = true, cza: Boolean = true){
     var nazwa = n
-    var kolory = k
     var ulozenie = u
     var znaczek = z
     var czerwony = cze
